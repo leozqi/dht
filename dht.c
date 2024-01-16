@@ -44,7 +44,7 @@ void  DHT_input(DHT_t *dht)
   gpio.Mode = GPIO_MODE_IT_RISING_FALLING;
   gpio.Speed = GPIO_SPEED_FREQ_HIGH;
   gpio.Pin = dht->pin;
-  gpio.Pull = GPIO_NOPULL;
+  gpio.Pull = GPIO_NOPULL
   HAL_GPIO_Init(dht->gpio,&gpio);    
 }
 //###############################################################################################################
